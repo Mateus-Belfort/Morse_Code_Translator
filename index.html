@@ -1,33 +1,74 @@
+<!--Projeto autoral de Mateus Belfort (https://github.com/Mateus-Belfort)-->
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://kit.fontawesome.com/07427a359b.js" crossorigin="anonymous"></script>   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/07427a359b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
     <title>Translator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
+      <form NAME="elementos" id="elementos">
         <div class="nav-bar">
-            <h3>MORSE CODE TRANSLATOR</h3>
+          <h3>MORSE CODE TRANSLATOR</h3>
         </div>
-        <div class="first-box">
-            <textarea name="normal" class="normal" id="normal" cols="30" rows="10"></textarea>
-        </div>
-        <div class="button">
-            <span>Translate</span>
-        </div>
-        <div class="second-box">
-            <textarea name="morse" class="morse" id="morse" cols="30" rows="10"></textarea>
-        </div>
-        <div class="icon">
-            <i class="fa-solid fa-trash fa-2x"></i>
-        </div>
-    </div>
-    
-</body>
-<script src="./assets/script.js"></script>
-</html>
 
+        <!--caixa para digitar o texto com letra comum-->
+        <div class="first-box">
+        <input
+          type="text"
+            NAME="letras"
+            class="normal"
+            id="normal"
+            cols="10"
+            rows="5"
+            
+            placeholder="Digite seu texto aqui(Sem acentos ou Caracteres especiais)"
+            required            
+        ></input>
+        
+        </div>
+
+
+        <!--Botão de Traduzir-->
+        <div class="button">
+          <input type="button" value="Translate" onclick="codificar()">
+        </div>
+
+        <!--Caixa de Texto com os códigos Morses-->
+        <div class="second-box">
+          <textarea
+            NAME="result"
+            class="morse"
+            id="result"
+            cols="30"
+            rows="10"
+            readonly            
+          ></textarea>
+        </div>
+
+         <!--Copiar para area de transferencia-->
+        <div class="icon-copy">
+            <button onClick="document.elementos.result.select(); document.execCommand('Copy'); alert(MessageEvent='Texto Copiado')"><i class= "fa-solid fa-copy fa-2x"></i></button>            
+          </div>
+
+        <!--Resetar-->
+        <div class="icon">
+          <button onClick="document.elementos.result.select(); document.execCommand('Delete')"><i class="fa-solid fa-trash fa-2x"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+        <h5><a href="https://github.com/Mateus-Belfort">Mateus-Belfort </a>Todos os Direitos Reservados</h5>
+    </div>
+  </body>
+</html>

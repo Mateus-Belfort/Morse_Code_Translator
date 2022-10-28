@@ -1,3 +1,6 @@
+/*Estilização Autoral de Mateus Belfort-(https://github.com/Mateus-Belfort)*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 * {
@@ -5,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Reggae One';
+    text-decoration: none;
 }
 
 body {
@@ -12,16 +16,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .container {
     background: #D9D9D9;
-    position: absolute;
+    position: relative;
     width: 872px;
     height: 606px;
-    right: 284px;
-    top: 209px;
+    right: 0;
+    top: 0;    
 }
 
 .nav-bar {
@@ -46,23 +50,42 @@ body {
     left: 2%;
     right: 2%;
     top: 15%;
-    background: #FFFDFD;
+    background: #FFFDFD;    
 }
 
 .first-box .normal {
     width: 100%;
     height: 200px;
     padding: 7px;
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+}
+
+.first-box .normal{
+    width: 100%;
+    height: 200px;
+    padding: 7px;
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
 }
 
 .button {
     position: absolute;
     width: 20%;
-    height: 46px;
+    height: 40px;
     left: 40%;
     right: 60%;
-    top: 49%;
-    background: #3A3838;
+    top: 49%;    
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -70,32 +93,23 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
-    position: absolute;
-    width: 20%;
-    height: 46px;
-    left: 40%;
-    right: 60%;
-    top: 49%;
-    background: #10436d;    
-    border-radius: 15px;
-    box-shadow: 5px 0.2em 0.2em #8BE5F9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button span {
+.button input {
     text-align: center;
-    padding: 10px 15px;
+    background: #3A3838;
+    padding: 10px 15px;    
+    margin-top: 10px;   
     color: #FFFFFF;
     font-style: normal;
-    font-size: 20px;
+    font-size: 20px;    
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-span:hover{
+.button input:hover{
     color: #000;
     text-shadow: 3px 3px 0.1em #eee;
+    box-shadow: 5px 0.2em 0.2em #8BE5F9;
+    cursor: pointer;
 }
 
 .second-box {
@@ -112,6 +126,12 @@ span:hover{
     width: 100%;
     height: 200px;
     padding: 7px;
+    resize: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
 }
 
 .icon {
@@ -121,3 +141,161 @@ span:hover{
     top: 92.5%;
     bottom: 7.5%;        
 }
+
+.icon-copy{
+    position: absolute;
+    left: 86%;
+    right: 14%;
+    top: 92.5%;
+    bottom: 7.5%;
+    border: none;
+    background: #D9D9D9;
+    cursor: pointer; 
+}
+
+.icon-copy button{
+    position: relative;
+    left: 86%;
+    right: 14%;
+    top: 88%;
+    bottom: 12%;
+    border: none;
+    background: #D9D9D9;
+    cursor: pointer; 
+}
+
+.icon button {
+    border: none;
+    background: #D9D9D9;
+    cursor: pointer;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 86.9px;
+    background: #D9D9D9;
+    top: 92%;    
+}
+
+.footer h5 , a{
+    text-align: center;
+    padding-top: 43.4px;
+    color: #000;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 390px){
+    .nav-bar h3 {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+
+    .icon-copy{
+        position: absolute;
+        left: 80%;
+        right: 20%;
+        top: 92.5%;
+        bottom: 7.5%;
+        border: none;
+        background: #D9D9D9;
+        cursor: pointer; 
+    }
+
+    .icon {
+        position: absolute;
+        left: 90%;
+        right: 10%;
+        top: 92.5%;
+        bottom: 7.5%;        
+    }
+
+    .footer h5 , a{
+        text-align: center;
+        padding-top: 30px;
+        color: #000;
+        font-size: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .first-box .normal{
+        font-size: 10px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .second-box .morse {
+        font-size: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media (max-width: 450px){
+    .nav-bar h3 {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+
+    .icon-copy{
+        position: absolute;
+        left: 80%;
+        right: 20%;
+        top: 92.5%;
+        bottom: 7.5%;
+        border: none;
+        background: #D9D9D9;
+        cursor: pointer; 
+    }
+
+    .icon {
+        position: absolute;
+        left: 90%;
+        right: 10%;
+        top: 92.5%;
+        bottom: 7.5%;        
+    }
+
+    .footer h5 , a{
+        text-align: center;
+        padding-top: 30px;
+        color: #000;
+        font-size: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .first-box .normal{
+        font-size: 10px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .second-box .morse {
+        font-size: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+
