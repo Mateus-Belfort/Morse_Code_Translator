@@ -12,7 +12,7 @@
       src="https://kit.fontawesome.com/07427a359b.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/script.js"></script>
+   
     <title>Translator</title>
   </head>
   <body>
@@ -24,18 +24,7 @@
 
         <!--caixa para digitar o texto com letra comum-->
         <div class="first-box">
-        <input
-          type="text"
-            NAME="letras"
-            class="normal"
-            id="normal"
-            cols="10"
-            rows="5"
-            
-            placeholder="Digite seu texto aqui(Sem acentos ou Caracteres especiais)"
-            required            
-        ></input>
-        
+        <input type="text"  name="letras" class="normal" id="normal" placeholder="Digite seu texto aqui(Sem acentos ou Caracteres especiais)" required>        
         </div>
 
 
@@ -47,12 +36,13 @@
         <!--Caixa de Texto com os códigos Morses-->
         <div class="second-box">
           <textarea
-            NAME="result"
+            name="result"
             class="morse"
             id="result"
             cols="30"
             rows="10"
-            readonly            
+            readonly
+            required            
           ></textarea>
         </div>
 
@@ -63,7 +53,7 @@
 
         <!--Resetar-->
         <div class="icon">
-          <button onClick="document.elementos.result.select(); document.execCommand('Delete')"><i class="fa-solid fa-trash fa-2x"></i></button>
+          <button onClick="document.elementos.result.select(); document.execCommand('Delete');"><i class="fa-solid fa-trash fa-2x"></i></button>
         </div>
       </form>
     </div>
@@ -71,4 +61,5 @@
         <h5><a href="https://github.com/Mateus-Belfort">Mateus-Belfort </a>Todos os Direitos Reservados</h5>
     </div>
   </body>
+  <script src="./assets/script.js"></script>
 </html>

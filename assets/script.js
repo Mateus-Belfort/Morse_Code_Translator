@@ -44,6 +44,12 @@ var charCodes=new Array(36);
     var temp=''
     
     function codificar() {
+        if(document.getElementById("normal").value.length < 1){
+            alert('Por favor, Digite algo para traduzir!');
+            document.getElementById("normal").focus();
+            return false
+        }
+
     document.elementos.letras.value=document.elementos.letras.value.toLowerCase();
     document.elementos.result.value="";
     temp=''
@@ -63,4 +69,5 @@ var charCodes=new Array(36);
     
     document.elementos.result.value+="\n\n\n Explicão: \n\n"+temp
     }
+
 
