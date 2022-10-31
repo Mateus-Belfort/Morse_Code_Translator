@@ -232,16 +232,9 @@ body {
         bottom: 7.5%;
     }
 
-    .footer h5 , a{
-        text-align: center;
-        padding-top: 30px;
-        color: #000;
-        font-size: 10px;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
-    }
+    .footer{
+        visibility: hidden;
+    }    
 
     .first-box .normal{
         font-size: 10px;
