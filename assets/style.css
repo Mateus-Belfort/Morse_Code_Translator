@@ -1,6 +1,5 @@
 /*Estilização Autoral de Mateus Belfort-(https://github.com/Mateus-Belfort)*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 * {
@@ -55,25 +54,12 @@ body {
 
 .first-box .normal {
     width: 100%;
-    height: 200px;
+    height: 100%;
     padding: 7px;
     resize: none;
     font-family: sans-serif;
     font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    border: none;
-}
-
-.first-box .normal{
-    width: 100%;
-    height: 200px;
-    padding: 7px;
-    resize: none;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 1px;
     border-radius: 5px;
     border: none;
@@ -82,10 +68,10 @@ body {
 .button {
     position: absolute;
     width: 20%;
-    height: 40px;
+    height: 20px;
     left: 40%;
     right: 60%;
-    top: 49%;    
+    top: 50.5%;    
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -100,7 +86,7 @@ body {
     margin-top: 10px;   
     color: #FFFFFF;
     font-style: normal;
-    font-size: 20px;    
+    font-size: 15px;    
     border-radius: 15px;
     cursor: pointer;
 }
@@ -136,51 +122,86 @@ body {
 
 .icon {
     position: absolute;
-    left: 93%;
-    right: 7%;
+    left: 92%;
+    right: 8%;
     top: 92.5%;
     bottom: 7.5%;        
 }
 
-.icon-copy{
+.icon-reload {
     position: absolute;
-    left: 86%;
-    right: 14%;
+    left: 85%;
+    right: 15%;
     top: 92.5%;
     bottom: 7.5%;
-    border: none;
-    background: #D9D9D9;
-    cursor: pointer; 
 }
 
-.icon-copy button{
-    position: relative;
-    left: 86%;
-    right: 14%;
-    top: 88%;
-    bottom: 12%;
-    border: none;
-    background: #D9D9D9;
-    cursor: pointer; 
-}
-
-.icon button {
+#tooltip-reload, #tooltip-copy{
     border: none;
     background: #D9D9D9;
     cursor: pointer;
 }
 
+
+
+#tooltip-reload::after{
+    content: "Recarregar";
+    position: absolute;
+    background-color: #A8A6A6;
+    padding-top: 8px;
+    top: 0.1px;
+    font-size: 12px;
+    color: #eee;
+    left: 1.5px;
+    letter-spacing: 1px;    
+    width: 100px;
+    height: 20px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 500ms, transform 500ms;
+}
+
+#tooltip-reload:is(:hover, :focus)::after {
+    opacity: 1;
+    transform: translateY(-48px);
+}
+
+#tooltip-copy::after{
+    content: "Copiar";
+    position: absolute;
+    background-color: #A8A6A6;
+    padding-top: 8px;
+    top: 0.1px;
+    font-size: 12px;
+    color: #eee;
+    left: 1.5px;
+    letter-spacing: 1px;    
+    width: 60px;
+    height: 20px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 500ms, transform 500ms;
+}
+
+#tooltip-copy:is(:hover, :focus)::after {
+    opacity: 1;
+    transform: translateY(-48px);
+}
+
 .footer{
     position: absolute;
     width: 100%;
-    height: 8%;
+    height: 7%;
     background: #D9D9D9;
-    top: 92%;    
+    top: 93%;    
+    left: 0; 
 }
 
 .footer h5 , a{
     text-align: center;
-    padding-top: 43.4px;
+    padding: 25px 0;
     color: #000;
     font-size: 17px;
     font-family: sans-serif;
@@ -195,17 +216,6 @@ body {
         text-align: center;
         padding: 10px 20px;
         font-size: 22px;
-    }
-
-    .icon-copy{
-        position: absolute;
-        left: 80%;
-        right: 20%;
-        top: 92.5%;
-        bottom: 7.5%;
-        border: none;
-        background: #D9D9D9;
-        cursor: pointer; 
     }
 
     .icon {
@@ -251,17 +261,7 @@ body {
         font-size: 22px;
     }
 
-    .icon-copy{
-        position: absolute;
-        left: 80%;
-        right: 20%;
-        top: 92.5%;
-        bottom: 7.5%;
-        border: none;
-        background: #D9D9D9;
-        cursor: pointer; 
-    }
-
+    
     .icon {
         position: absolute;
         left: 90%;

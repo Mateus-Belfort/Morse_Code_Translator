@@ -12,54 +12,45 @@
       src="https://kit.fontawesome.com/07427a359b.js"
       crossorigin="anonymous"
     ></script>
-   
+    <script src="./assets/script.js"></script>   
     <title>Translator</title>
   </head>
   <body>
     <div class="container">
-      <form NAME="elementos" id="elementos">
+      <form name="morsecode" id="elementos">
         <div class="nav-bar">
           <h3>MORSE CODE TRANSLATOR</h3>
-        </div>
+        </div>         
+          
+            <div class="first-box">              
+            <input type="text" name="chars" size="28" value="" class="normal"
+            placeholder="Type in a word or phrase!">
+            </div>
 
-        <!--caixa para digitar o texto com letra comum-->
-        <div class="first-box">
-        <input type="text"  name="letras" class="normal" id="normal" placeholder="Digite seu texto aqui(Sem acentos ou Caracteres especiais)" required>        
-        </div>
+            <div class="button">
+              <input type="button" value="Encode" onClick="encode()">
+            </div>
 
+            <div class="second-box">
+              <textarea name="codebox" class="morse" cols="50" rows="11" wrap="virtual" readonly></textarea>
+            </div>
+          
+            <div class="icon-reload">
+              <i id="tooltip-reload" class="fa-solid fa-arrows-rotate fa-2x" onClick="window.location.reload()"></i>              
+            </div> 
 
-        <!--Botão de Traduzir-->
-        <div class="button">
-          <input type="button" value="Translate" onclick="codificar()">
-        </div>
-
-        <!--Caixa de Texto com os códigos Morses-->
-        <div class="second-box">
-          <textarea
-            name="result"
-            class="morse"
-            id="result"
-            cols="30"
-            rows="10"
-            readonly
-            required            
-          ></textarea>
-        </div>
-
-         <!--Copiar para area de transferencia-->
-        <div class="icon-copy">
-            <button onClick="document.elementos.result.select(); document.execCommand('Copy'); alert(MessageEvent='Texto Copiado')"><i class= "fa-solid fa-copy fa-2x"></i></button>            
-          </div>
-
-        <!--Resetar-->
-        <div class="icon">
-          <button onClick="document.elementos.result.select(); document.execCommand('Delete');"><i class="fa-solid fa-trash fa-2x"></i></button>
-        </div>
+          <div class="icon">
+            <i id="tooltip-copy" class="fa-solid fa-copy fa-2x" onClick="document.morsecode.codebox.select(); document.execCommand('Copy');"></i>              
+          </div>              
       </form>
+      
     </div>
     <div class="footer">
-        <h5><a href="https://github.com/Mateus-Belfort">Mateus-Belfort </a>Todos os Direitos Reservados</h5>
-    </div>
+      <h5><a href="https://github.com/Mateus-Belfort">Mateus-Belfort </a>Todos os Direitos Reservados</h5>
+    </div> 
+    
+    
+    
   </body>
-  <script src="./assets/script.js"></script>
+  
 </html>
