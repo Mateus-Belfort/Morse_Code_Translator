@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-[Tradutor de Codigo Morse](https://tradutor-morse.netlify.app/)
+[Conversor de Codigo Morse](https://tradutor-morse.netlify.app/)
 
 O Conversor de código morse foi desenvolvido para ser uma aplicação web simples e de facil usabilidade, o designer inicial é de minha autoria, pensado para oferecer um
 visual simples e colaborativo para o usuario, ele foi inclementado com tons frios e neutros. A aplicação tem responsavidade para alguns aparelhos mbile, podendo sofrer alterações
