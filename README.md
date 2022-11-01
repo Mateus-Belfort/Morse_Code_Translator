@@ -6,10 +6,9 @@
 [Conversor de Codigo Morse](https://tradutor-morse.netlify.app/)
 
 O Conversor de código morse foi desenvolvido para ser uma aplicação web simples e de facil usabilidade, o designer inicial é de minha autoria, pensado para oferecer um
-visual simples e colaborativo para o usuario, ele foi inclementado com tons frios e neutros. A aplicação tem responsavidade para alguns aparelhos mbile, podendo sofrer alterações
-em seu visual, dependendo do tamanho da tela do aparelho. Este projeto foi desenvolvido com a finalidade de melhorar minhas habilidades dentro da area de Front End. Acrescento que
-possui um codigo JS inclementado a partir do site [Kit JavaScript](http://javascriptkit.com), que fornece codigos JS gratuitos.
+visual simples e colaborativo para o usuario, ele foi inclementado com tons frios e neutros. A aplicação tem responsavidade para alguns aparelhos mobile, podendo sofrer alterações em seu visual, dependendo do tamanho da tela do aparelho. Este projeto foi desenvolvido com a finalidade de melhorar minhas habilidades dentro da area de Front End. Acrescento que possui um codigo JS inclementado a partir do site [Kit JavaScript](http://javascriptkit.com), que fornece codigos JS gratuitos.
 
+# Funcionalidades
 A funcionalidade do projeto é bem simples.
 possui um campo onde será digitado o texto (Com letras do Alfabeto), em seguida clica no botão **ENCODE**, logo após aparecerá no campo abaixo o texto digitado
 em código morse, ea explicação de letra por letra solicitada. Possui a opção de copiar o texto clicando no icone **COPIAR**, aparecerá uma mensagem informando
